@@ -1,0 +1,48 @@
+<template>
+    <lightning-input label="First Name" value={firstName} name="firstName" onchange={handleChange}></lightning-input>
+    <lightning-input label="Last Name" value={lastName} name="lastName" onchange={handleChange}></lightning-input>
+    Company Name: <lightning-formatted-text value={companyName}></lightning-formatted-text>
+    <br/>
+    Upper Case FullName: <lightning-formatted-text value={uppercasedFullName}></lightning-formatted-text>
+    <br/>
+    <br/>
+    <br/>
+    Full Name: {fullName.firstName} {fullName.lastName}
+    <lightning-button label="Click Here" onclick={handleClick}></lightning-button>
+
+    <br/>
+    <br/>
+    <lightning-button label="Notify Parent" onclick={handleNotifyClick}></lightning-button>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<lightning-input name="firstName" label="First Name" value={firstName} onchange={handleChange}> </lightning-input> 
+    <lightning-input name="lastName" label="Last Name" value={lastName} onchange={handleChange}></lightning-input>
+
+    CompanyName: <lightning-formatted-text value={companyName}></lightning-formatted-text>
+    <br/>
+    
+    Upper Case Name: <lightning-formatted-text value={uppercasedFullName}></lightning-formatted-text>
+
+    <br/>
+
+    <lightning-button label="Click Here" onclick={handleClick}></lightning-button>
+    
+    Full Name: {fullName.firstName} {fullName.lastName}
+
+    <p>
+        <lightning-button label="Notify Parent" onclick={notifyParent}></lightning-button>
+    </p>    
+    -->

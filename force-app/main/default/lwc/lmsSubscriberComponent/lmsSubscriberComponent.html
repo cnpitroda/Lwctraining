@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Subscriber">
+                <lightning-button
+            label="subscribe"
+            onclick={handleSubscribe}
+        ></lightning-button>
+        <lightning-button
+            label="unsubscribe"
+            onclick={handleUnsubscribe}
+        ></lightning-button>
+        <lightning-button label="clear" onclick={handleClear}></lightning-button>
+
+        {receivedMessage}
+    </lightning-card>
+</template>

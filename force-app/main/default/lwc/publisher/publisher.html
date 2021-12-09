@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Publisher">
+        <p class="slds-p-horizontal_small">
+            <lightning-input label="Message" value={message} onchange={handleChange}></lightning-input>
+        </p>
+        <p slot="footer">
+            <lightning-button label="Publish" onclick={handleClick}></lightning-button>
+        </p>
+    </lightning-card>
+</template>

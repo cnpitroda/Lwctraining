@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Datatable Example" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <template if:true={dt}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={dt}
+                    onsave={handleSave}
+                    columns={columns}
+                >
+                </lightning-datatable>
+            </template>
+            <template if:true={err}>
+                <!-- handle Apex error -->
+            </template>
+        </div>
+    </lightning-card>
+</template>
