@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="updatedRecords" type="list"/>
+    <aura:handler event="c:ApplicationEvent" action="{!c.onApplicationEvent}" />
+    <br/>
+	Recruitment Updates: 
+    <br/>
+    <aura:iteration items="{!v.updatedRecords}" var="rec">
+        <lightning:formattedText value="{!rec.Id}"/>
+        <br/>
+    </aura:iteration>
+</aura:component>

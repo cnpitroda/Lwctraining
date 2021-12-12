@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    <aura:attribute type="decimal" name="num1" default="0" description="first number"/>
+    <aura:attribute type="decimal" name="num2" default="0"/>
+    <aura:attribute type="decimal" name="result" default="0"/>    
+    <aura:attribute type="string" name="num1label" default="label"/>    
+    <aura:attribute type="string" name="num2label" default="label"/>    
+    <aura:attribute type="string" name="resultlabel" default="label"/>
+    
+    <lightning:input type="number" label="{!v.num1label}" value="{!v.num1}"/>
+    <lightning:input type="number" label="{!v.num2label}" value="{!v.num2}"/>
+    {!v.resultlabel}: <lightning:formattedNumber aura:id="res" value="{!v.result}"/>
+    <br/>
+    <lightning:button label="Calculate Average" onclick="{!c.onCalculate}"/>
+</aura:component>

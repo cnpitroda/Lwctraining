@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable" >
+    <aura:attribute name="searchSize" type="decimal"/>
+    <aura:handler name="sampleComponentEvent" event="c:ComponentEvent" action="{!c.onComponentEvent}" phase="capture"/>
+    Recruitment Home: Number of records retrieved - {!v.searchSize}
+    <c:RecruitmentDetails />
+    <c:RecruitmentUpdates />
+</aura:component>

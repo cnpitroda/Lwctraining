@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Create Form">
+        <lightning-record-form
+        object-api-name={accountObject}
+        fields={myFields}
+        onsuccess={handleSuccessForm}>
+        </lightning-record-form>
+    </lightning-card>
+    <lightning-card title="Edit Form">
+            <lightning-record-form
+            record-id={recordId}
+            object-api-name={objectApiName}
+            columns="2"
+            mode="edit"
+            layout-type="Compact">
+        </lightning-record-form>
+    </lightning-card>
+
+</template>

@@ -1,0 +1,5 @@
+<design:component>
+	<design:attribute name="num1label" default="label"/>    
+    <design:attribute name="num2label" default="label"/>    
+    <design:attribute name="resultlabel" default="label"/>
+</design:component>

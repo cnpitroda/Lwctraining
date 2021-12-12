@@ -1,0 +1,26 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+	Candidate: 
+	<lightning:recordForm
+        recordId="a005g000030mP0vAAE"
+        objectApiName="Candidate__c"
+        layoutType="Full"
+        mode="view" columns="2"/>
+    <br/><br/>
+    Job Position: 
+    <lightning:recordViewForm recordId="a015g00000XfjSRAAZ" objectApiName="Job_Position__c">
+        <div class="slds-box">
+            <lightning:outputField fieldName="Name"/>
+        	<lightning:outputField fieldName="Position__c"/> 
+        	<lightning:outputField fieldName="Status__c"/>
+        </div>
+    </lightning:recordViewForm>    
+    <br/><br/>
+    Application: 
+    
+    <lightning:recordEditForm objectApiName="Application__c">
+        <lightning:messages />
+        <lightning:inputField fieldName="Job_Position__c"/>
+        <lightning:inputField fieldName="Candidate__c"/> 
+        <lightning:button class="slds-m-top_small" variant="brand" type="submit" name="update" label="Update" />
+    </lightning:recordEditForm>
+</aura:component>

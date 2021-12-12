@@ -1,0 +1,11 @@
+<aura:component controller="RecruitmentController">
+    <aura:attribute name="data" type="object"/>
+    <aura:attribute name="columns" type="list"/>
+    <aura:registerEvent name="sampleComponentEvent" type="c:ComponentEvent"/>
+	<aura:registerEvent name="sampleAppEvent" type="c:ApplicationEvent"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <br/>Recruitment Details:
+    
+    <lightning:dataTable data="{!v.data}" columns="{!v.columns}" keyField="Id" onsave="{!c.onTableSave}"/>
+</aura:component>
